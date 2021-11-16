@@ -1,33 +1,51 @@
 # Jekyll configuration for Open SDG platform
 
+remote_data_prefix: "https://odsvalencia.github.io/data/"
+data_edit_url: http://prose.io/#ODSValencia/data/edit/develop/data/indicator_[id].csv
+metadata_edit_url: http://prose.io/#ODSValencia/data/edit/develop/meta/[id].md
+languages:
+  - es
+  - en
+  
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 remote_theme: open-sdg/open-sdg@1.6.0
 
 # Replace this title as needed.
-title: Indicadores para los Objetivos de Desarrollo Sostenible
+title: general.site_title
 url: ""
-data_dir: _data
 environment: staging
 
-remote_data_prefix: "./data"
 
 # Automatically create indicator pages, goal pages,
 # and some other required pages.
 create_indicators:
   layout: indicator
+  previous_next_links: true
 create_goals:
-  layout: goal-by-target
-create_pages: true
+  layout: goal-by-target-vertical
+  previous_next_links: true
+create_pages:
+  pages:
+    - folder: /
+      layout: frontpage
+    - folder: /goals
+      layout: goals
+    - folder: /reporting-status
+      layout: reportingstatus
+    - filename: indicators.json
+      folder: /
+      layout: indicator-json
+    - folder: /search
+      layout: search
 
-# Github Repo for Data
-# Replace this value as needed.
-repo_name: data
-branch: develop
-# Replace this value as needed.
-org_name: ODSValencia
+country:
+  name: Valencia
+  adjective: Valencia
+  
+frontpage_goals_grid:
+  title: custom-translations.my-goals-grid-title
+  description: Click on each goal for our Sustainable Development Goal global indicator data.
 
-# Build settings
-markdown: kramdown
 
 # Pages
 collections:
@@ -73,3 +91,16 @@ exclude:
   - README.md
   - LICENSE
 
+
+decimal_separator: ','
+# Date format
+date_formats:
+  - type: standard
+    language: en
+    format: '%B %d, %Y'
+  - type: standard
+    language: es
+    format: '%d de %B de %Y'
+  - type: standard
+    language: ca
+    format: '%d de %B de %Y'
