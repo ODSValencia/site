@@ -22,4 +22,20 @@
           "status": "complete"
         }]
     }
+  },
+  {
+    "goal": {
+      "id": "8",
+      "title": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+      "indicators": [
+        
+        {
+          "id": "8-5-2",
+          "title": "Unemployment rate, by sex, age and persons with disabilities",
+          "description": "",
+          "keywords": "",
+          "href": "/site/8-5-2",
+          "status": "complete"
+        }]
+    }
   }]

@@ -22,4 +22,20 @@
           "status": "complete"
         }]
     }
+  },
+  {
+    "goal": {
+      "id": "8",
+      "title": "Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos",
+      "indicators": [
+        
+        {
+          "id": "8-5-2",
+          "title": "Tasa de desempleo, desglosada por sexo, edad y personas con discapacidad",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/8-5-2",
+          "status": "complete"
+        }]
+    }
   }]
