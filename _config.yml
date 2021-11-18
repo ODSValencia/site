@@ -125,7 +125,7 @@ map_layers:
     max_zoom: 6
     staticBorders: true
     subfolder: distritos
-    label: Distrito
+    label: distrito
     
     
 # Tell Jekyll to use the Remote Theme plugin.
