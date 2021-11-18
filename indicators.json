@@ -25,6 +25,22 @@
   },
   {
     "goal": {
+      "id": "3",
+      "title": "Ensure healthy lives and promote well-being for all at all ages",
+      "indicators": [
+        
+        {
+          "id": "3-2-1",
+          "title": "Under‐5 mortality rate",
+          "description": "",
+          "keywords": "",
+          "href": "/site/3-2-1",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "8",
       "title": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
       "indicators": [

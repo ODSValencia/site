@@ -25,6 +25,22 @@
   },
   {
     "goal": {
+      "id": "3",
+      "title": "Garantizar una vida sana y promover el bienestar de todos a todas las edades",
+      "indicators": [
+        
+        {
+          "id": "3-2-1",
+          "title": "Tasa de mortalidad de niños menores de 5 años",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/3-2-1",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "8",
       "title": "Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos",
       "indicators": [
