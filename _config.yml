@@ -112,21 +112,32 @@ metadata_tabs:
 goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
 
     
-map_options:
-  tileURL: https://{s}.tile.jawg.io/{id}/{z}/{x}/{y}{r}.png?access-token={accessToken}
-  tileOptions:
-    id: jawg-light
-    accessToken: lCtbMZiG4tbVWl7uq9EEch1yphnuLx9JyZL2qZwoQJ26wAu73oK1NkU4K50AALkp
-    attribution:  <a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | <a href="http://geoportal.statistics.gov.uk/">ONS</a>
-  minZoom: 4
+#map_options:
+#  tileURL: https://{s}.tile.jawg.io/{id}/{z}/{x}/{y}{r}.png?access-token={accessToken}
+#  tileOptions:
+#    id: jawg-light
+#    accessToken: lCtbMZiG4tbVWl7uq9EEch1yphnuLx9JyZL2qZwoQJ26wAu73oK1NkU4K50AALkp
+#    attribution:  <a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | <a href="http://geoportal.statistics.gov.uk/">ONS</a>
+#  minZoom: 4
 
+#map_layers:
+#  - min_zoom: 4
+#    max_zoom: 6
+#    staticBorders: true
+#    subfolder: distritos
+#    label: distrito
 map_layers:
-  - min_zoom: 4
-    max_zoom: 6
-    staticBorders: true
-    subfolder: distritos
-    label: distrito
-    
+  -
+    # This can be a local relative path or a remote URL.
+    geojson_file: https://github.com/ODSValencia/data/Distritos.geojson
+    # This is the property in the GeoJSON that holds the name of the region.
+    name_property: nombre
+    # This is the property in the GeoJSON that holds the "geocode" of the region.
+    id_property: coddistrit
+    # This controls the subfolder that the GeoJSON file will be created in.
+    output_subfolder: Distritos
+    # This adds a prefix to all the GeoJSON filenames.
+    filename_prefix: indicator_
     
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
