@@ -89,11 +89,7 @@ frontpage_cards:
     rule_color: ''
   - title: Información
     content: |
-      [The Global Goals](https://estadisticavlc.shinyapps.io/Indicadores_ODS/)
-    include: ''
-    button_label: Read more
-    button_link: 'https://example.com'
-    rule_color: ''
+      [Indicadore ODS Ayuntamiento de Valencia](https://estadisticavlc.shinyapps.io/Indicadores_ODS/)
 frontpage_goals_grid:
   title: Datos de Valencia para los indicadores de los Objetivos de Desarrollo Sostenible
   description: >-
