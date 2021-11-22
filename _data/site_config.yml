@@ -76,10 +76,8 @@ footer_language_toggle: none
 footer_menu:
   - path: /contact-us
     translation_key: menu.contact_us
-  - path: 'https://twitter.com/MyTwitterAccount'
+  - path: 'https://twitter.com/estadisticavlc'
     translation_key: general.twitter
-  - path: 'https://facebook.com/MyFacebookAccount'
-    translation_key: general.facebook
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
 frontpage_cards:
@@ -89,18 +87,9 @@ frontpage_cards:
     button_label: ''
     button_link: ''
     rule_color: ''
-  - title: Lorem ipsum
+  - title: Información
     content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
-      cursus est sed dapibus.
-    include: ''
-    button_label: Read more
-    button_link: 'https://example.com'
-    rule_color: ''
-  - title: Nam vestibulum
-    content: |
-      Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
-      interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
+      [The Global Goals](https://estadisticavlc.shinyapps.io/Indicadores_ODS/)
     include: ''
     button_label: Read more
     button_link: 'https://example.com'
