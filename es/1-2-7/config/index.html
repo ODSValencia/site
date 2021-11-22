@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211122084814">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211122091019">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -650,10 +650,34 @@ data-event-label="high"
     // Set values according to this site's configuration.
     propertyEditorAccessibilityFixes(editor.getEditor('root.composite_breakdown_label'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('computation_units', "Percentage (%)");
+        var propertyEditor = editor.getEditor('root.computation_units');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: computation_units');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.computation_units'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.copyright'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('data_footnote', "Please note, some figures should be treated with caution due to sample sizes <30. For more information, see data source.");
+        var propertyEditor = editor.getEditor('root.data_footnote');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: data_footnote');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_footnote'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_non_statistical'));
@@ -664,6 +688,18 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_notice_text'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('data_show_map', true);
+        var propertyEditor = editor.getEditor('root.data_show_map');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: data_show_map');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_show_map'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_start_values'));
@@ -692,7 +728,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_title', "global_indicators.1-2-7-title");
+        var currentValue = normalizeCurrentValue('graph_title', "Percentage of adults who have participated in formal or non-formal learning in the last 12 months");
         var propertyEditor = editor.getEditor('root.graph_title');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -720,6 +756,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.graph_type'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicator_available', "Percentage of adults who have participated in formal or non-formal learning in the last 12 months");
+        var propertyEditor = editor.getEditor('root.indicator_available');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicator_available');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_available'));
 
     
@@ -736,8 +784,32 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_name'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicator_number', "1.2.7");
+        var propertyEditor = editor.getEditor('root.indicator_number');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicator_number');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_number'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('national_geographical_coverage', "England");
+        var propertyEditor = editor.getEditor('root.national_geographical_coverage');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: national_geographical_coverage');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_geographical_coverage'));
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.page_content'));
@@ -899,12 +971,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20211122084814'></script>
+<script src='/site/assets/js/sdg.js?v=20211122091019'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20211122084814"></script><script>
+    <script src="/site/assets/js/custom.js?v=20211122091019"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
