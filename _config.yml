@@ -1,9 +1,16 @@
+# Replace this title as needed.
+title: general.site_title
+url: ""
+data_dir: data
+environment: staging
+
+
 # Jekyll configuration for Open SDG platform
 baseurl: ""
 
 remote_data_prefix: "https://odsvalencia.github.io/data/"
-data_edit_url: http://prose.io/#ODSValencia/data/edit/develop/data/indicator_[id].csv
-metadata_edit_url: http://prose.io/#ODSValencia/data/edit/develop/meta/[id].md
+#data_edit_url: http://prose.io/#ODSValencia/data/edit/develop/data/indicator_[id].csv
+#metadata_edit_url: http://prose.io/#ODSValencia/data/edit/develop/meta/[id].md
 languages:
   - es
   - ca
@@ -12,10 +19,7 @@ languages:
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 remote_theme: open-sdg/open-sdg@1.6.0
 
-# Replace this title as needed.
-title: general.site_title
-url: ""
-environment: staging
+
 
 
 # Automatically create indicator pages, goal pages,
@@ -57,7 +61,8 @@ frontpage_cards:
   - title: Useful resources
     # Control the content of the card - can use Markdown.
     content: |
-      [The Global Goals](https://estadisticavlc.shinyapps.io/Indicadores_ODS/)
+    
+      [Información](https://estadisticavlc.shinyapps.io/Indicadores_ODS/)
 
 # Pages
 collections:
@@ -75,7 +80,7 @@ collections:
 # Menu
 menu:
   # Use these to customise the main navigation.
-  - path: /
+  - path: /goals
     # The "translation_key" refers to the key in the SDG Translations repository.
     translation_key: general.goals
   - path: /reporting-status
