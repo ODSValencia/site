@@ -57,7 +57,7 @@ frontpage_cards:
   - title: Useful resources
     # Control the content of the card - can use Markdown.
     content: |
-      [The Global Goals](https://estadisticavlc.shinyapps.io/Indicadores_ODS/)
+      [Información](https://estadisticavlc.shinyapps.io/Indicadores_ODS/)
 
 # Pages
 collections:
