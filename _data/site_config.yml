@@ -141,7 +141,18 @@ languages:
   - es
 languages_public: []
 logos: []
-map_layers: []
+map_layers:
+  -
+    # This can be a local relative path or a remote URL.
+    geojson_file: https://github.com/ODSValencia/data/Distritos.geojson
+    # This is the property in the GeoJSON that holds the name of the region.
+    name_property: nombre
+    # This is the property in the GeoJSON that holds the "geocode" of the region.
+    id_property: coddistrit
+    # This controls the subfolder that the GeoJSON file will be created in.
+    output_subfolder: Distritos
+    # This adds a prefix to all the GeoJSON filenames.
+    filename_prefix: indicator_
 map_options:
   minZoom: 5
   maxZoom: 10
