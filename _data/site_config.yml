@@ -140,46 +140,73 @@ languages:
   - es
 languages_public: []
 logos: []
-map_layers:
-  -
-    # This can be a local relative path or a remote URL.
-    geojson_file: https://github.com/ODSValencia/data/Distritos.geojson
-    # This is the property in the GeoJSON that holds the name of the region.
-    name_property: nombre
-    # This is the property in the GeoJSON that holds the "geocode" of the region.
-    id_property: coddistrit
-    # This controls the subfolder that the GeoJSON file will be created in.
-    #output_subfolder: Distritos
-    # This adds a prefix to all the GeoJSON filenames.
-    #filename_prefix: indicator_
 map_options:
+  # Control the limits on zooming in/out in the map:
   minZoom: 5
   maxZoom: 10
-  tileURL: ''
+  # If you would like to use tile (background) imagery, use these:
+  tileURL: https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
   tileOptions:
-    id: ''
-    accessToken: ''
-    attribution: ''
-  colorRange: chroma.brewer.BuGn
+    id: mapbox.light
+    accessToken: pk.eyJ1IjoibW9ib3NzZSIsImEiOiJjazU1M2trazQwYnFwM2trYmdwNm9rOWxkIn0.u36w-RJPqoTGmivl_zED1w
+    attribution: <a href="https://www.openstreetmap.org/copyright">&copy; OpenStreetMap</a> contributors |<br class="visible-xs"> <a href="https://www.bkg.bund.de">&copy; GeoBasis-De / BKG 2021</a> |<br class="hidden-lg"> <a href="https://www.destatis.de/DE/Home/_inhalt.html">&copy; Statistisches Bundesamt (Destatis), 2021</a>
+  # Control the choropleth color range. See https://gka.github.io/chroma.js/#chroma-brewer
+  # 1 map color depending on goal --- start ---
+  colorRange: ["#F6E8EC", "#E3BAC6", "#D18CA1", "#BE5E7B", "#AB3055", "#A21942", "#821435", "#610F28", "#410A1A", "#20050D"]
+  # --- stop ---
+
+  # Set the color for boundaries that have no data.
   noValueColor: '#f0f0f0'
+  # For documentation on the style options below, see here:
+  # https://leafletjs.com/reference-1.4.0.html#path-option
+  # Set the default style for boundaries in the map:
   styleNormal:
     weight: 1
     opacity: 1
+    color: '#888'
     fillOpacity: 0.7
-    color: '#888888'
-    dashArray: ''
+  # Set the style for boundaries that have been selected/highlighted:
   styleHighlighted:
     weight: 1
     opacity: 1
+    color: '#111'
     fillOpacity: 0.7
-    color: '#111111'
-    dashArray: ''
+  # Set the style for top-level boundaries that are displaying in other layers.
+  # Note: This is only applicable when using the "nested zoom" feature (see below).
   styleStatic:
     weight: 2
     opacity: 1
     fillOpacity: 0
     color: '#172d44'
-    dashArray: '5,5'
+    dashArray: 5,5
+#map_layers:
+#  - min_zoom: 4
+#    max_zoom: 6
+#    staticBorders: true
+#    subfolder: distritos
+#    label: distrito
+map_layers:
+  -
+    # The subfolder under 'geojson' in the data repository holding the GeoJSON files:
+    subfolder: distritos
+    # The label to use in the "Download GeoJSON" button:
+    label: Distritos
+    # The minimum zoom at which this layer should be visible.
+    min_zoom: 0
+    # The maximum zoom at which this layer should be visible.
+    max_zoom: 20
+    # Whether or not these boundaries should display statically on lower layers.
+    staticBorders: true
+    # This can be a local relative path or a remote URL.
+    #geojson_file: https://github.com/ODSValencia/data/Distritos.geojson
+    # This is the property in the GeoJSON that holds the name of the region.
+    #name_property: nombre
+    # This is the property in the GeoJSON that holds the "geocode" of the region.
+    #id_property: coddistrit
+    # This controls the subfolder that the GeoJSON file will be created in.
+    #output_subfolder: Distritos
+    # This adds a prefix to all the GeoJSON filenames.
+    #filename_prefix: indicator_
 menu:
   - path: /goals
     translation_key: general.goals
