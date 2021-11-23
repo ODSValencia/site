@@ -25,8 +25,8 @@ contrast_type: default
 cookie_consent_form:
   enabled: false
 country:
-  name: Valencia
-  adjective: Valencia
+  name: ciudad.ciudad
+  adjective: ciudad.ciudad
 create_goals:
   layout: goal-by-target-vertical
   previous_next_links: false
@@ -132,13 +132,14 @@ indicator_metadata_form:
   translation_link: ''
   language: ''
   scopes:
-    - national
+    - local
     - global
   exclude_fields: []
   translated: false
 languages:
-  - en
   - es
+  - ca
+  - en
 languages_public: []
 logos: []
 map_layers:
@@ -150,37 +151,37 @@ map_layers:
     # This is the property in the GeoJSON that holds the "geocode" of the region.
     id_property: coddistrit
     # This controls the subfolder that the GeoJSON file will be created in.
-    output_subfolder: Distritos
+    #output_subfolder: Distritos
     # This adds a prefix to all the GeoJSON filenames.
-    filename_prefix: indicator_
-map_options:
-  minZoom: 5
-  maxZoom: 10
-  tileURL: ''
-  tileOptions:
-    id: ''
-    accessToken: ''
-    attribution: ''
-  colorRange: chroma.brewer.BuGn
-  noValueColor: '#f0f0f0'
-  styleNormal:
-    weight: 1
-    opacity: 1
-    fillOpacity: 0.7
-    color: '#888888'
-    dashArray: ''
-  styleHighlighted:
-    weight: 1
-    opacity: 1
-    fillOpacity: 0.7
-    color: '#111111'
-    dashArray: ''
-  styleStatic:
-    weight: 2
-    opacity: 1
-    fillOpacity: 0
-    color: '#172d44'
-    dashArray: '5,5'
+    #filename_prefix: indicator_
+#map_options:
+#  minZoom: 5
+#  maxZoom: 10
+#  tileURL: ''
+#  tileOptions:
+#    id: ''
+#    accessToken: ''
+#    attribution: ''
+#  colorRange: chroma.brewer.BuGn
+#  noValueColor: '#f0f0f0'
+#  styleNormal:
+#    weight: 1
+#    opacity: 1
+#    fillOpacity: 0.7
+#    color: '#888888'
+#    dashArray: ''
+#  styleHighlighted:
+#    weight: 1
+#    opacity: 1
+#    fillOpacity: 0.7
+#    color: '#111111'
+#    dashArray: ''
+#  styleStatic:
+#    weight: 2
+#    opacity: 1
+#    fillOpacity: 0
+#    color: '#172d44'
+#    dashArray: '5,5'
 menu:
   - path: /goals
     translation_key: general.goals
