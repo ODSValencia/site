@@ -145,7 +145,6 @@ map_options:
   minZoom: 5
   maxZoom: 10
   # If you would like to use tile (background) imagery, use these:
-  tileURL: https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
   tileOptions:
     id: mapbox.light
     accessToken: pk.eyJ1IjoibW9ib3NzZSIsImEiOiJjazU1M2trazQwYnFwM2trYmdwNm9rOWxkIn0.u36w-RJPqoTGmivl_zED1w
@@ -187,7 +186,17 @@ map_options:
 #    label: distrito
 map_layers:
   -
-    # The subfolder under 'geojson' in the data repository holding the GeoJSON files:
+    # This can be a local relative path or a remote URL.
+    geojson_file: https://github.com/ODSValencia/data/Distritos.geojson
+    # This is the property in the GeoJSON that holds the name of the region.
+    name_property: nombre
+    # This is the property in the GeoJSON that holds the "geocode" of the region.
+    id_property: coddistrit
+    # This controls the subfolder that the GeoJSON file will be created in.
+    #output_subfolder: Distritos
+    # This adds a prefix to all the GeoJSON filenames.
+    #filename_prefix: indicator_
+        # The subfolder under 'geojson' in the data repository holding the GeoJSON files:
     subfolder: distritos
     # The label to use in the "Download GeoJSON" button:
     label: Distritos
@@ -197,16 +206,6 @@ map_layers:
     max_zoom: 20
     # Whether or not these boundaries should display statically on lower layers.
     staticBorders: true
-    # This can be a local relative path or a remote URL.
-    #geojson_file: https://github.com/ODSValencia/data/Distritos.geojson
-    # This is the property in the GeoJSON that holds the name of the region.
-    #name_property: nombre
-    # This is the property in the GeoJSON that holds the "geocode" of the region.
-    #id_property: coddistrit
-    # This controls the subfolder that the GeoJSON file will be created in.
-    #output_subfolder: Distritos
-    # This adds a prefix to all the GeoJSON filenames.
-    #filename_prefix: indicator_
 menu:
   - path: /goals
     translation_key: general.goals
