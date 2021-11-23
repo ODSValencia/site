@@ -137,8 +137,9 @@ indicator_metadata_form:
   exclude_fields: []
   translated: false
 languages:
-  - en
   - es
+  - ca
+  - en
 languages_public: []
 logos: []
 map_layers:
@@ -150,9 +151,9 @@ map_layers:
     # This is the property in the GeoJSON that holds the "geocode" of the region.
     id_property: coddistrit
     # This controls the subfolder that the GeoJSON file will be created in.
-    output_subfolder: Distritos
+    #output_subfolder: Distritos
     # This adds a prefix to all the GeoJSON filenames.
-    filename_prefix: indicator_
+    #filename_prefix: indicator_
 map_options:
   minZoom: 5
   maxZoom: 10
