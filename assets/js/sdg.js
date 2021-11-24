@@ -2888,7 +2888,7 @@ var mapView = function () {
     $('#map').sdgMap({
       indicatorId: indicatorId,
       mapOptions: {"minZoom":5,"maxZoom":10,"colorRange":["#F6E8EC","#E3BAC6","#D18CA1","#BE5E7B","#AB3055","#A21942","#821435","#610F28","#410A1A","#20050D"],"noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"color":"#888","fillOpacity":0.7},"styleHighlighted":{"weight":1,"opacity":1,"color":"#111","fillOpacity":0.7},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":55}},
-      mapLayers: [{"geojson_file":"https://github.com/ODSValencia/data/Distritos.geojson","name_property":"nombre","id_property":"coddistrit","subfolder":"distritos","label":"Distritos","min_zoom":0,"max_zoom":20,"staticBorders":true}],
+      mapLayers: [{"subfolder":"distritos","label":"indicator.map","min_zoom":0,"max_zoom":20,"staticBorders":false}],
       precision: precision,
       decimalSeparator: decimalSeparator,
       goal: goalNr,
