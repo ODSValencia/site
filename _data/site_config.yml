@@ -25,8 +25,8 @@ contrast_type: default
 cookie_consent_form:
   enabled: false
 country:
-  name: Valencia
-  adjective: Valencia
+  name: custom-translations.ciudad
+  adjective: custom-translations.ciudad
 create_goals:
   layout: goal-by-target-vertical
   previous_next_links: false
