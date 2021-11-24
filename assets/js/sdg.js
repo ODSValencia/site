@@ -33,6 +33,7 @@ opensdg.autotrack = function(preset, category, action, label) {
  * TODO:
  * Integrate with high-contrast switcher.
  */
+ 
 (function($) {
 
   if (typeof L === 'undefined') {
@@ -114,6 +115,8 @@ opensdg.autotrack = function(preset, category, action, label) {
     this._decimalSeparator = options.decimalSeparator;
     this.currentDisaggregation = 0;
 
+    this.goalNr = options.goal;
+
     // Require at least one geoLayer.
     if (!options.mapLayers || !options.mapLayers.length) {
       console.log('Map disabled - please add "map_layers" in site configuration.');
@@ -135,6 +138,11 @@ opensdg.autotrack = function(preset, category, action, label) {
 
     this._defaults = defaults;
     this._name = 'sdgMap';
+
+    //---#2 TimeSeriesNameDisplayedInMaps---start--------------------------------------------------------------
+    this.timeSeriesName = opensdg.maptitles(this.indicatorId)[0];
+    this.unitName = opensdg.maptitles(this.indicatorId)[1];
+    //---#2 TimeSeriesNameDisplayedInMaps---stop---------------------------------------------------------------
 
     this.init();
   }
@@ -320,6 +328,7 @@ opensdg.autotrack = function(preset, category, action, label) {
       var minimumValues = [],
           maximumValues = [],
           availableYears = [];
+          avaialbleValues = [];
 
       // At this point we need to load the GeoJSON layer/s.
       var geoURLs = this.mapLayers.map(function(item) {
@@ -411,13 +420,29 @@ opensdg.autotrack = function(preset, category, action, label) {
           $(plugin.element).parent().append(downloadButton);
 
           // Keep track of the minimums and maximums.
+          console.log("features: ", geoJson.features);
           _.each(geoJson.features, function(feature) {
             if (feature.properties.values && feature.properties.values.length) {
               availableYears = availableYears.concat(Object.keys(feature.properties.values[0]));
-              minimumValues.push(_.min(Object.values(feature.properties.values[0])));
-              maximumValues.push(_.max(Object.values(feature.properties.values[0])));
+              for (var year in feature.properties.values[0]){
+                if (! _.isNaN(feature.properties.values[0][year]) && feature.properties.values[0][year]!="") {
+                  //availableYears.concat(year);
+                  avaialbleValues.push(feature.properties.values[0][year]);
+                }
+              };
+              // _.each(feature.properties.values[0], function(year){
+              //   if (!_.isNaN(year.values(year))) {
+              //     availableYears.concat(Object.key(year));
+              //     avaialbleValues.push(Object.values(year));
+              //   }
+              // });
+              minimumValues.push(_.min(avaialbleValues));
+              maximumValues.push(_.max(avaialbleValues));
             }
           });
+          console.log("minArray: ", minimumValues);
+          console.log("Values: ", avaialbleValues);
+          console.log("Years: ", availableYears);
         }
 
         // Calculate the ranges of values, years and colors.
@@ -427,9 +452,22 @@ opensdg.autotrack = function(preset, category, action, label) {
         minimumValues = _.reject(minimumValues, isMapValueInvalid);
         maximumValues = _.reject(maximumValues, isMapValueInvalid);
         plugin.valueRange = [_.min(minimumValues), _.max(maximumValues)];
-        plugin.colorScale = chroma.scale(plugin.options.colorRange)
+
+
+        //#1 map color depending on goal --- start ---
+
+        var start = plugin.indicatorId.indexOf("_") + 1;
+        var stop = plugin.indicatorId.indexOf("-");
+        var goal = plugin.indicatorId.slice(start, stop);
+
+
+        //plugin.colorScale = chroma.scale(plugin.options.colorRange)
+        plugin.colorScale = chroma.scale(plugin.options.colorRange[parseInt(goal)-1])
           .domain(plugin.valueRange)
-          .classes(plugin.options.colorRange.length);
+          //.classes(plugin.options.colorRange.length);
+          .classes(plugin.options.colorRange[parseInt(goal)-1].length);
+        //#1 map color depending on goal --- stop  ---
+
         plugin.years = _.uniq(availableYears).sort();
         plugin.currentYear = plugin.years[0];
 
