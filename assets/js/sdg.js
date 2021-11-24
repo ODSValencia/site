@@ -2845,7 +2845,7 @@ var mapView = function () {
 
   "use strict";
 
-  this.initialise = function(indicatorId, precision, decimalSeparator) {
+  this.initialise = function(indicatorId, precision, decimalSeparator, goalNr) {
     $('.map').show();
     $('#map').sdgMap({
       indicatorId: indicatorId,
@@ -2853,6 +2853,7 @@ var mapView = function () {
       mapLayers: [{"geojson_file":"https://github.com/ODSValencia/data/Distritos.geojson","name_property":"nombre","id_property":"coddistrit","subfolder":"distritos","label":"Distritos","min_zoom":0,"max_zoom":20,"staticBorders":true}],
       precision: precision,
       decimalSeparator: decimalSeparator,
+      goal: goalNr,
     });
   };
 };
