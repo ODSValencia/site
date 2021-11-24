@@ -4377,7 +4377,11 @@ $(function() {
     },
 
     onAdd: function() {
-      var controlTpl = '' +
+      //---#2 TimeSeriesNameDisplayedInMaps---start--------------------------------------------------------------
+      //var controlTpl = '' +
+      var controlTpl = '<span id="mapHead">{title}</span>' +
+      //---#2 TimeSeriesNameDisplayedInMaps---stop---------------------------------------------------------------
+
         '<ul id="selection-list"></ul>' +
         '<div class="legend-swatches">' +
           '{legendSwatches}' +
@@ -4388,19 +4392,30 @@ $(function() {
           '<span class="legend-value right">{highValue}</span>' +
           '<span class="arrow right"></span>' +
         '</div>';
+
+
       var swatchTpl = '<span class="legend-swatch" style="width:{width}%; background:{color};"></span>';
-      var swatchWidth = 100 / this.plugin.options.colorRange.length;
-      var swatches = this.plugin.options.colorRange.map(function(swatchColor) {
+      var swatchWidth = 100 / this.plugin.options.colorRange[this.plugin.goalNr].length;
+      var swatches = this.plugin.options.colorRange[this.plugin.goalNr].map(function(swatchColor) { //[this.plugin.goalNr]
         return L.Util.template(swatchTpl, {
           width: swatchWidth,
           color: swatchColor,
         });
       }).join('');
       var div = L.DomUtil.create('div', 'selection-legend');
+
+      //---#2 TimeSeriesNameDisplayedInMaps---start--------------------------------------------------------------
+      var headline = this.plugin.timeSeriesName
+      headline += ', <br>' + this.plugin.unitName;
+      //---#2 TimeSeriesNameDisplayedInMaps---stop--------------------------------------------------------------
+
       div.innerHTML = L.Util.template(controlTpl, {
         lowValue: this.plugin.alterData(opensdg.dataRounding(this.plugin.valueRange[0])),
         highValue: this.plugin.alterData(opensdg.dataRounding(this.plugin.valueRange[1])),
         legendSwatches: swatches,
+        //---#2 TimeSeriesNameDisplayedInMaps---start--------------------------------------------------------------
+        title: headline,
+        //---#2 TimeSeriesNameDisplayedInMaps---stop---------------------------------------------------------------
       });
       return div;
     },
@@ -4416,6 +4431,8 @@ $(function() {
         '</li>';
       var plugin = this.plugin;
       var valueRange = this.plugin.valueRange;
+
+
       selectionList.innerHTML = this.selections.map(function(selection) {
         var value = plugin.getData(selection.feature.properties);
         var percentage, valueStatus;
@@ -4449,12 +4466,12 @@ $(function() {
 
   });
 
+
   // Factory function for this class.
   L.Control.selectionLegend = function(plugin) {
     return new L.Control.SelectionLegend(plugin);
   };
 }());
-
 /*
  * Leaflet year Slider.
  *
