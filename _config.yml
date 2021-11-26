@@ -5,8 +5,8 @@ remote_data_prefix: "https://odsvalencia.github.io/data/"
 data_edit_url: http://prose.io/#ODSValencia/data/edit/develop/data/indicator_[id].csv
 metadata_edit_url: http://prose.io/#ODSValencia/data/edit/develop/meta/[id].md
 languages:
-  - en
   - es
+  - en
   - ca
   
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
@@ -101,9 +101,6 @@ metadata_tabs:
   - scope: national
     title: custom-translations.local-metadata
     description: custom-translations.description-local-metadata
-  - scope: global
-    title: indicator.global_metadata
-    description: indicator.global_metadata_blurb
   - scope: sources
     title: indicator.sources
     description: ''
