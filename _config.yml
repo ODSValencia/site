@@ -180,11 +180,6 @@ series_toggle: true
 
 # Control the behavior of breadcrumbs for certain types of content.
 breadcrumbs:
-  post:
-    - label: general.home
-      path: /
-    - label: menu.updates
-      path: /news
   goal:
     - label: general.home
       path: /
