@@ -264,7 +264,7 @@ metadata_edit_url: http://prose.io/#ODSValencia/data/edit/develop/meta/[id].md
 metadata_tabs: []
 news:
   category_links: false
-non_global_metadata: indicator.national_metadata
+non_global_metadata: custom-translations.local-metadata
 progress_status:
   status_heading: ''
   status_types: []
