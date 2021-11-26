@@ -131,8 +131,16 @@ indicator_metadata_form:
   repository_link: https://github.com/ODSValencia/data/tree/develop/meta
   translation_link: ''
   language: ''
-  scopes:
-    - national
+  metadata_tabs:
+  - scope: national
+    title: custom-translations.local-metadata
+    description: custom-translations.description-local-metadata
+  - scope: global
+    title: indicator.global_metadata
+    description: indicator.global_metadata_blurb
+  - scope: sources
+    title: indicator.sources
+    description: ''
   exclude_fields: []
   translated: false
 languages:
