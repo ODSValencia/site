@@ -141,8 +141,9 @@ indicator_metadata_form:
   exclude_fields: []
   translated: false
 languages:
-  - en
   - es
+  - en
+  - ca
 languages_public: []
 logos: []
 #map_layers:
