@@ -135,9 +135,6 @@ indicator_metadata_form:
   - scope: national
     title: custom-translations.local-metadata
     description: custom-translations.description-local-metadata
-  - scope: global
-    title: indicator.global_metadata
-    description: indicator.global_metadata_blurb
   - scope: sources
     title: indicator.sources
     description: ''
