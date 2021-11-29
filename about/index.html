@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -14,7 +14,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://odsvalencia.github.io/data/es',
+  remoteDataBaseUrl: 'https://odsvalencia.github.io/data/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -41,7 +41,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'es',
+  language: 'en',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -107,7 +107,7 @@ var translations = {
 
 
         
-    <title>Dirección - Indicadores para los Objetivos de Desarrollo Sostenible</title>
+    <title>Sobre nosaltres - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -137,7 +137,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211129090523">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211129091242">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -148,21 +148,21 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
 
     </head>
-<body class="language-es
+<body class="language-en
 layout-page
 ">
 <!-- <div class="container"> -->
 
 
-<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo","toggle_menu":"Menú de alternancia. Haga clic para ampliar o reducir el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alfa</strong>
+    <strong class="phase-tag">Alpha</strong>
     
-    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:test@example.com">comentarios</a>.
+    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
   </div>
 </div>
 
@@ -172,16 +172,16 @@ layout-page
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/site/es/" id="home">
-    <img src="/site/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
+      <a class="navbar-brand" href="/site/" id="home">
+    <img src="/site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'>
         
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Desactivar alto contraste"
-           aria-label="Desactivar alto contraste"
+        <a title="Disable high contrast"
+           aria-label="Disable high contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -192,8 +192,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Habilitar alto contraste"
-           aria-label="Habilitar alto contraste"
+        <a title="Enable high contrast"
+           aria-label="Enable high contrast"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -210,11 +210,11 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/site/management/">
-              English
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li class="language-option-es">
+            <a href="/site/es/about/">
+              Español
             </a>
           </li></ul>
   </div>
@@ -225,10 +225,10 @@ data-event-label="high"
 
     <div class="search-and-desktop-widgets">
       <div id="search" class="menu-target">
-  <form action="/site/es/search/">
-    <label class="sr-only" for="indicator_search">Buscar</label>
-    <input type="text" name="q" id="indicator_search" title="Buscar" /><!--
-    --><button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  <form action="/site/search/">
+    <label class="sr-only" for="indicator_search">Search</label>
+    <input type="text" name="q" id="indicator_search" title="Search" /><!--
+    --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -244,11 +244,11 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/site/management/">
-              English
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li class="language-option-es">
+            <a href="/site/es/about/">
+              Español
             </a>
           </li></ul>
   </div>
@@ -259,8 +259,8 @@ data-event-label="high"
         </li>
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Desactivar alto contraste"
-           aria-label="Desactivar alto contraste"
+        <a title="Disable high contrast"
+           aria-label="Disable high contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -271,8 +271,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Habilitar alto contraste"
-           aria-label="Habilitar alto contraste"
+        <a title="Enable high contrast"
+           aria-label="Enable high contrast"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -291,19 +291,19 @@ data-event-label="high"
     <div class="navbar navbar-default menu-without-widgets" id="main-nav">
       <ul class="top-level">
     <li id="menuToggle"
-        aria-label="Menú de alternancia. Haga clic para ampliar o reducir el menú."
+        aria-label="Menu toggle. Click to expand or collapse the menu."
         aria-haspopup="true">
-        <button data-target="menu-mobile" aria-expanded="false">Menú</button>
+        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/site/es/goals">Metas</a>
+    <a href="/site/goals">Goals</a>
 </li><li class="nav-link ">
-    <a href="/site/es/reporting-status">Estado de informes</a>
+    <a href="/site/reporting-status">Reporting Status</a>
+</li><li class="nav-link active">
+    <a href="/site/about">About</a>
 </li><li class="nav-link ">
-    <a href="/site/es/about">Acerca de</a>
+    <a href="/site/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/site/es/faq">FAQ</a>
-</li><li class="nav-link ">
-    <a href="/site/es/news">Actualizaciones</a>
+    <a href="/site/news">Updates</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -315,11 +315,11 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Español</span>
-      <span class="language-abbreviation">es</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
-    <ul class="dropdown-menu"><li class="language-option-en">
-            <a href="/site/management/">
-              English
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li class="language-option-es">
+            <a href="/site/es/about/">
+              Español
             </a>
           </li></ul>
   </div>
@@ -332,8 +332,8 @@ data-event-label="high"
 
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Desactivar alto contraste"
-           aria-label="Desactivar alto contraste"
+        <a title="Disable high contrast"
+           aria-label="Disable high contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -344,8 +344,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Habilitar alto contraste"
-           aria-label="Habilitar alto contraste"
+        <a title="Enable high contrast"
+           aria-label="Enable high contrast"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -362,29 +362,29 @@ data-event-label="high"
 
     </li>
     <li id="searchToggle"
-        aria-label="Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."
+        aria-label="Search toggle. Click to expand or collapse the search bar."
         aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Buscar</button>
+        <button data-target="search-mobile" aria-expanded="false">Search</button>
         <div id="search-mobile" class="menu-target">
-  <form action="/site/es/search/">
-    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" /><!--
-    --><button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  <form action="/site/search/">
+    <label class="sr-only" for="indicator_search-mobile">Search</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
+    --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
     </li>
 </ul>
       <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
-    <a href="/site/es/goals">Metas</a>
+    <a href="/site/goals">Goals</a>
 </li><li class="nav-link ">
-    <a href="/site/es/reporting-status">Estado de informes</a>
+    <a href="/site/reporting-status">Reporting Status</a>
+</li><li class="nav-link active">
+    <a href="/site/about">About</a>
 </li><li class="nav-link ">
-    <a href="/site/es/about">Acerca de</a>
+    <a href="/site/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/site/es/faq">FAQ</a>
-</li><li class="nav-link ">
-    <a href="/site/es/news">Actualizaciones</a>
+    <a href="/site/news">Updates</a>
 </li>
 
 </ul>
@@ -402,9 +402,17 @@ data-event-label="high"
 
 <div id="main-content" class="container" role="main">
     <div>
-        <h1>Dirección</h1>
+        <h1>Sobre nosaltres</h1>
         
-            <p><em>OpenSDG</em> Barcelona es una iniciativa del Ayuntamiento de Barcelona, impulsada por el <a href="https://ajuntament.barcelona.cat/es/organigrama-municipal/organ/Comissionat%20de%20l%27Agenda%202030">Comisionado de Agenda 2030</a> con el apoyo técnico de la empresa <a href="https://latempesta.cc/es.html">La Tempesta</a>.</p>
+            <p>Aquest lloc web té l’objectiu de difondre online les dades de l’Agenda 2030 de Barcelona, per tal que aquesta informació arribi al públic interessat de la manera més completa, actualitzada, estandarditzada i reutilitzable possible. És un exercici de transparència que ha de permetre fer un millor seguiment i avaluació del grau d’assoliment dels Objectius de Desenvolupament Sostenible a la ciutat de Barcelona.</p>
+
+<p>Les dades i metadades dels indicadors clau de les fites ODS de l’Agenda 2030 de Barcelona es publiquen a partir de la solució OpenSDG. Es tracta d’una plataforma basada en codi obert, pensada específicament per gestionar i publicar dades i estadístiques relacionades amb els ODS. Està construïda exclusivament amb biblioteques i eines de codi obert i es pot allotjar i mantenir mitjançant serveis gratuïts.</p>
+
+<p>Així mateix, els conjunts de dades es difonen en formats plenament compatibles per a la seva posterior publicació al <a href="https://opendata-ajuntament.barcelona.cat/en">portal del servei de dades obertes de l’Ajuntament de Barcelona</a></p>
+
+<p>portal del servei de dades obertes de l’Ajuntament de Barcelona <a href="https://open-sdg.readthedocs.io/en/latest/quick-start/">Guia</a>. El <a href="https://www.opendataenterprise.org/">Center for Open Data Enterprise (CODE)</a> també ofereix eines de suport pel desenvolupament i promoció de les aplicacions de dades obertes.</p>
+
+<p>Per a qualsevol consulta o aclariment sobre aquest lloc web o les dades publicades podeu contactar-nos a <a href="mailto:test@example.com">test@example.com</a>. També podeu buscar la resposta a l’apartat de <a href="/site/faq/">FAQ</a>.</p>
 
         
     </div>
@@ -416,10 +424,10 @@ data-event-label="high"
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
             
               <li>
-                <a href="/site/es/contact-us">Contáctenos</a>
+                <a href="/site/contact-us">Contact us</a>
                 
                 </li>
               <li>
@@ -428,13 +436,13 @@ data-event-label="high"
                 
                 </li>
               <li>
-                <a href="/site/es/about/cookies-and-privacy/">Galletas</a>
+                <a href="/site/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
             
             
-            <li><a href="/site/es/config">Configuration</a></li>
+            <li><a href="/site/config">Configuration</a></li>
             </ul>
         </div>
       </div>
@@ -464,17 +472,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'ocultar';</script>
+    translations['general']['hide'] = 'hide';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Buscar';</script>
+    translations['search']['search'] = 'Search';</script>
 
-<script src='/site/assets/js/sdg.js?v=20211129090523'></script>
+<script src='/site/assets/js/sdg.js?v=20211129091242'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20211129090523"></script><script>
+    <script src="/site/assets/js/custom.js?v=20211129091242"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
