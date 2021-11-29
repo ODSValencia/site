@@ -1,8 +1,8 @@
 ---
 layout: categories
 permalink: /es/categories/
-title: Categorias
+title: Categories
 language: es
 ---
-## Publicaciones por categoría
-Esta es una lista de las publicaciones, agrupados por categoría:
+
+Translation needed.
