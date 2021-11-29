@@ -1,69 +1,36 @@
 ---
 title: Frequently Asked Questions (FAQ)
 language: en
-permalink: /faq/
+permalink: /en/faq/
 layout: page
 ---
 
-## Table of contents
-- [How often will new data be added to this site?](#how-often-will-new-data-be-added-to-this-site)
+## Can I make suggestions regarding new or different data sources?
+If you have any comments regarding the data sources used, or any suggestions regarding the use of new data sources, you can contact us at <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>.
 
-- [How do I suggest new or different data sources?](#how-do-i-suggest-new-or-different-data-sources)
+## What does "Indicator status" mean?
+For each indicator, its status is defined in one of the following four categories:
 
-- [What are you doing to fill data gaps?](#what-are-you-doing-to-fill-data-gaps)
+* **Reported online** – The operational SDG target has been defined and the indicator is available at city level, despite the fact that the data may not be completely disaggregated or pending updating.
+* **Statistics in progress** – The operational target has been defined and the data source of the indicator identified, but the data is not yet available.
+* **Exploring data sources** – Either the operational goal has not been defined, or it has been, but it has not been possible to identify an adequate data source to develop the corresponding indicator.
+* **Not applicable** – The 17 SDGs of the 2030 Agenda are deployed in 169 targets, but not all of them have a translation at local level. In these cases, the label "Not applicable" is used.
 
-- [What does the reporting status mean?](#what-does-the-reporting-status-mean)
+In the event of adding fresh information to the status of an indicator or to data collection, this will be highlighted in the header of the indicator page.
 
-- [Can other countries copy this website?](#can-other-countries-copy-this-website)
+## How often will the data be updated on the web?
+It should be noted that the data sources that feed the indicators have very different origins, calendars and periodicities. The indicators are updated individually as new information becomes available.
 
-- [How accessible is this website?](#how-accessible-is-this-website)
+## What can be done to avoid the lack of data or the little disaggregation provided?
+There are indicators that are available at national, regional, provincial or metropolitan level, but not at the level of the core city.
 
-- [What browsers can I use to view this website?](#what-browsers-can-i-use-to-view-this-website)
-
-- [What do each of the three tiers mean?](#what-do-each-of-the-three-tiers-mean)
-
-## How often will new data be added to this site?
-We will add data as soon as it has been sourced and checked. This includes new data as well as updates to data we have already published. We will continue to collect data from existing sources where possible.
-
-## How do I suggest new or different data sources?
-If you have feedback on the data sources we have used or have suggestions for new data sources then please email us at <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>.
-
-## What are you doing to fill data gaps?
-For some indicators, although we may have data at the national level, our existing data sources don’t always allow us to disaggregate by all main groups.
-
-This means we need to look for new data sources, link existing ones, or model data.
-
-## What does the reporting status mean?
-We have used three different types of reporting status for an indicator, which are also colour coded:
-
-- **Reported (black):** As a minimum the headline national data for this indicator is available on this website but the data might not be fully disaggregated yet. We are continuing to source additional disaggregations.
-
-- **Statistics in progress (grey):** We have found a suitable source of data for this indicator or relevant proxy at national level. We are currently quality assuring the data and preparing it for publication.
-
-- **Exploring data sources (white):** We are still looking for a suitable data source for this indicator.
-
-- **Not applicable (striped):** This indicator is not applicable in the national context.
-
-
-## Can other countries copy this website?
-Yes. See the [Open SDG Quick Start guide](https://open-sdg.readthedocs.io/en/latest/quick-start/) for technical instructions on the quickest way to get a copy of the Open SDG platform up and running.
+This implies continuing to work on the search or creation of new data sources to solve this problem.
 
 ## How accessible is this website?
-Open SDG aims to be as accessible and usable as possible for every user and works towards meeting AA level of [Web Content Accessibility Guidelines (WCAG 2.0)](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag-20).
+The intention is to make this website as accessible as possible to all users. Work is underway to pass the accessibility test of the [Web Content Accessibility Guidelines (WCAG 2.0)](https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag-20).
 
-## What browsers can I use to view this website?
-Our website works with most of the latest versions of the commonly used browsers.
+## Which browsers can I use to visit this website?
+Any of the latest versions of commonly used browsers can be used.
 
-## What do each of the three tiers mean?
-Each of the SDG indicators are assigned to one (or more) of the following tiers:
- - **Tier 1:** Indicator is conceptually clear, has an internationally established methodology and standards are available, and data are regularly produced by countries for at least 50 per cent of countries and of the population in every region where the indicator is relevant.
-
- - **Tier 2:** Indicator is conceptually clear, has an internationally established methodology and standards are available, but data are not regularly produced by countries.
-
- - **Tier 3:** No internationally established methodology or standards are yet available for the indicator, but methodology/standards are being (or will be) developed or tested (As of the 51st session of the UN Statistical Commission, the global indicator framework does not contain any Tier III indicators)
-
-**As of 28 December 2020:** The updated tier classification contains **130 Tier I indicators**, **97 Tier II indicators** and **4 indicators that have multiple tiers** (different components of the indicator are classified into different tiers).
-
-For more information, [see the IAEG-SDGs Tier Classification for Global SDG Indicators](https://unstats.un.org/sdgs/iaeg-sdgs/tier-classification/)
-
-[Back to top](#top)
+## Can other cities copy this site?
+Yes. This website has been built and hosted using 100% free software. Therefore, other cities can freely reuse its code. You can check out the highlights of the OpenSDG platform in the following [Guide](https://open-sdg.readthedocs.io).The [Center for Open Data Enterprise (CODE)](http://www.opendataenterprise.org/) also offers support tools for the development and promotion of open data applications.
