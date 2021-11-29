@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Contact us
-permalink: /es/contact-us/
-language: es
+permalink: /en/contact-us/
+language: en
 ---
 
 Translation needed.
