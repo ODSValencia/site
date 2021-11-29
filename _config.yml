@@ -5,9 +5,9 @@ remote_data_prefix: "https://odsvalencia.github.io/data/"
 data_edit_url: http://prose.io/#ODSValencia/data/edit/develop/data/indicator_[id].csv
 metadata_edit_url: http://prose.io/#ODSValencia/data/edit/develop/meta/[id].md
 languages:
+  - ca
   - es
   - en
-  - ca
   
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 remote_theme: open-sdg/open-sdg@1.6.0
@@ -41,8 +41,8 @@ create_pages:
       layout: search
 
 country:
-  name: custom-translations.ciudad
-  adjective: custom-translations.ciudad
+  name: València
+  adjective: València
   
 analytics:
   ga_prod: ''
@@ -54,10 +54,10 @@ frontpage_goals_grid:
 frontpage_cards:
   - title: frontpage.download_all
     include: components/download-all-data.html
-  - title: Useful resources
+  - title: frontpage.info
     # Control the content of the card - can use Markdown.
     content: |
-      [Información](https://estadisticavlc.shinyapps.io/Indicadores_ODS/)
+      [frontpage.enlace_ods](https://estadisticavlc.shinyapps.io/Indicadores_ODS/)
 
 # Pages
 collections:
