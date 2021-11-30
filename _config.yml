@@ -5,9 +5,9 @@ remote_data_prefix: "https://odsvalencia.github.io/data/"
 data_edit_url: http://prose.io/#ODSValencia/data/edit/develop/data/indicator_[id].csv
 metadata_edit_url: http://prose.io/#ODSValencia/data/edit/develop/meta/[id].md
 languages:
+  - ca
   - es
   - en
-  - ca
   
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 remote_theme: open-sdg/open-sdg@1.6.0
@@ -54,10 +54,10 @@ frontpage_goals_grid:
 frontpage_cards:
   - title: frontpage.download_all
     include: components/download-all-data.html
-  - title: Useful resources
+  - title: frontpage.info
     # Control the content of the card - can use Markdown.
     content: |
-      [Información](https://estadisticavlc.shinyapps.io/Indicadores_ODS/)
+      [frontpage.enlace_ods](https://estadisticavlc.shinyapps.io/Indicadores_ODS/)
 
 # Pages
 collections:
@@ -84,8 +84,7 @@ menu:
     translation_key: menu.about
   - path: /faq
     translation_key: menu.faq
-  - path: /management
-    translation_key: custom-translations.management
+
     
 footer_menu:
   - path: https://twitter.com/estadisticavlc
@@ -123,18 +122,18 @@ goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
 #    staticBorders: true
 #    subfolder: distritos
 #    label: distrito
-map_layers:
-  -
-    # The subfolder under 'geojson' in the data repository holding the GeoJSON files:
-    subfolder: distritos
-    # The label to use in the "Download GeoJSON" button:
-    label: indicator.map
-    # The minimum zoom at which this layer should be visible.
-    min_zoom: 0
-    # The maximum zoom at which this layer should be visible.
-    max_zoom: 20
-    # Whether or not these boundaries should display statically on lower layers.
-    staticBorders: false
+#map_layers:
+#  -
+#    # The subfolder under 'geojson' in the data repository holding the GeoJSON files:
+#    subfolder: distritos
+#    # The label to use in the "Download GeoJSON" button:
+#    label: indicator.map
+#    # The minimum zoom at which this layer should be visible.
+#    min_zoom: 0
+#    # The maximum zoom at which this layer should be visible.
+#    max_zoom: 20
+#    # Whether or not these boundaries should display statically on lower layers.
+#    staticBorders: false
     # This can be a local relative path or a remote URL.
     #geojson_file: https://github.com/ODSValencia/data/Distritos.geojson
     # This is the property in the GeoJSON that holds the name of the region.
