@@ -87,9 +87,9 @@ frontpage_cards:
     button_label: ''
     button_link: ''
     rule_color: ''
-  - title: Información
+  - title: frontpage.info
     content: |
-      [Indicadore ODS Ayuntamiento de Valencia](https://estadisticavlc.shinyapps.io/Indicadores_ODS/)
+      [frontpage.enlace_ods](https://estadisticavlc.shinyapps.io/Indicadores_ODS/)
 frontpage_goals_grid:
   title: Datos de Valencia para los indicadores de los Objetivos de Desarrollo Sostenible
   description: >-
