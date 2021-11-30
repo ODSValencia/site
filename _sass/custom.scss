@@ -1,6 +1,38 @@
-/**
- * custom.scss
- *
- * This file left blank intentionally. Implementations of Open SDG can use
- * a similarly named file for custom styles.
- */
+// Enter any custom Sass in this file.
+.layout-frontpage-alt .frontpage-goals-grid {
+    margin: 0px !important;
+    border-top: 0px !important;
+}
+
+.complete {
+    background-color: #5cb85c;
+    background: #5cb85c;
+    color: black !important;
+    border: none !important;
+}
+
+.inprogress {
+    background-color: #e2dc74;
+    background: #e2dc74;
+    color: black !important;
+   border: none !important;
+}
+
+.notstarted {
+    background-color: #e2a574;
+    background: #e2a574;
+    color: black !important;
+    border: none !important;
+}
+
+.notapplicable {
+    background-color: #E27874;
+    background: #E27874;
+    color: black !important;
+    border: none !important;
+}
+
+.status-inner{
+    background-color: transparent !important;
+    color: black !important;
+}
